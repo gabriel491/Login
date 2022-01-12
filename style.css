@@ -1,0 +1,162 @@
+/*Variáveis*/
+:root {
+    --green: #04c35c;
+    --blue: #2b6cb0;
+  
+    --white: #ffffff;
+    --white300: #f7fafc;
+  
+    --dark: #1a202c;
+    --input: #e8e8e8;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ########### Left-Login ########### */
+#container-hero {
+    width: 50%;
+    height: 100%;
+    background: var(--white300);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-hero img {
+    width: 40%;
+    height: 40%;
+}
+
+@media (max-width: 800px) {
+    #container-hero {
+        display: none;
+    }
+
+    #container-login {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* ########### Left-Login ########### */
+#container-login {
+    background: var(--white);
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container-login form input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.title .title-top{
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.25em;
+}
+
+.title .title-botton {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.625em;
+    line-height: 2.063em;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.188em;
+}
+form input {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 1.063em;
+
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+.container-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.container-text label, p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    text-justify: center;
+}
+
+.container-text p {
+    color:var(--blue)
+}
+
+button {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    color: var(--white);
+    margin: 10px 0;
+    border-radius: 5px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.188em;
+}
+
+.login {
+    background: var(--green);
+}
+
+#container-button .icon-google {
+    display: inline;
+    height: 15px;
+}
+
+.login-google {
+    background: var(--dark);
+    font-weight: normal;
+}
+
+/* ########### Footer ########### */
+footer p{
+    position: absolute;
+    bottom: 5%;
+    width: auto;
+    display: inline;
+}
+
+footer .text-footer {
+    text-align: center;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.188em;
+}
